@@ -58,14 +58,14 @@ h2 {
 }
 
 .choiceButton {
-    height: 5em; 
-    width: 10.5em;
+    height: 4.7em; 
+    width: 10em;
 
     border-radius: 5px;
     border: none;
     background-color: blueviolet;
 
-    font-size: 1.8em;
+    font-size: 1.7em;
     font-family:'Rubik Mono One', sans-serif;
 }
 
@@ -87,7 +87,7 @@ button:hover {
 }
 
 #resetButton {
-    width: 3.5em;
+    width: 4.2em;
     height: 2em;
 
     border-radius: 5px;
@@ -95,6 +95,7 @@ button:hover {
     background-color: black;
     color: white;
     font-size: 20px;
+    text-align: center;
 }
 
 /* MEDIA QUERY FOR SMALL SCREENS*/
