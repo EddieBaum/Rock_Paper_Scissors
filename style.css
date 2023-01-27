@@ -32,6 +32,8 @@ body {
 
 .displayContainer {
     margin-top: 7.5em;
+    margin-left: 1em;
+
 }
 
 h2 {
@@ -98,9 +100,37 @@ button:hover {
     text-align: center;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+}
+#footerP {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px auto;
+    letter-spacing: 2px;
+}
+
+.logoSpan {
+    margin: 5px auto;
+}
+
+a {
+    color: white;
+}
+
 /* MEDIA QUERY FOR SMALL SCREENS*/
 
 @media only screen and (max-width: 750px) {
+    .ml4 {
+        font-size: 4em;
+      }
+
     .buttonsContainer {
         flex-direction: column;
     }
