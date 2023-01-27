@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap'); /* font-family: 'Rubik Mono One', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&display=swap'); /* font-family: 'Source Code Pro', monospace; */
+
+/* {
+    border: 1px solid orange; 
+}*/
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.ml4 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-weight: 400;
+    font-size: 4.5em;
+    text-align: center;
+  }
+
+.ml4 .letters {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0.3em;
+    right: 0;
+    opacity: 0; 
+}
+
+.displayContainer {
+    margin-top: 7.5em;
+}
+
+h2 {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 2em; 
+    margin: 1.8em auto;
+}
+#your-choice {
+    opacity: 1;
+}
+#computer-choice {
+    opacity: 0;
+    transition: opacity .7s ease-in .8s;  
+}
+#result {
+    opacity: 0;
+    transition: opacity .2s ease-in 2s;
+}
+
+.buttonsContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.choiceButton {
+    height: 5em; 
+    width: 10.5em;
+
+    border-radius: 5px;
+    border: none;
+    background-color: blueviolet;
+
+    font-size: 1.8em;
+    font-family:'Rubik Mono One', sans-serif;
+}
+
+.emoji {
+    font-size: 3em;
+	-webkit-transform: rotate(-76deg);
+    display: inline-block;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#resetButtonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.8em auto; 
+}
+
+#resetButton {
+    width: 3.5em;
+    height: 2em;
+
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+/* MEDIA QUERY FOR SMALL SCREENS*/
+
+@media only screen and (max-width: 750px) {
+    .buttonsContainer {
+        flex-direction: column;
+    }
+    html {
+        font-size: 12px;
+    }
+
+    .choiceButton {
+        height: 4em;
+        width: 9em;
+        margin: 20px auto;
+    }
+}
