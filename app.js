@@ -5,6 +5,7 @@ const RockPaperScissorButtons = Array.from(document.getElementsByClassName("choi
 const computerChoiceList = ['rock', 'paper', 'scissors']; 
 const resetButton = document.getElementById('resetButton'); 
 const allDisplays = Array.from(document.getElementsByClassName('display'));
+const resetScreen = document.getElementById('resetButtonContainer');
 let userChoice 
 let computerChoice
 let result
@@ -57,6 +58,9 @@ RockPaperScissorButtons.forEach(button => button.addEventListener('click', (e) =
         resultDisplay.style.transition = 'opacity .2s ease-in 2s';
         computerChoiceDisplay.style.opacity = '1';
         resultDisplay.style.opacity = '1';
+        setTimeout(() => {
+            resetScreen.style.display = 'flex';
+        }, 2500);
     }
 }));
 
@@ -84,6 +88,7 @@ resetButton.addEventListener('click', () => {
     resultDisplay.style.opacity = '0';
     computerChoiceDisplay.style.transition = 'none';
     resultDisplay.style.transition = 'none'; 
+    resetScreen.style.display = 'none';
 });
 
 
