@@ -53,6 +53,7 @@ h2 {
 #result {
     display: flex;
     font-size: 2.5em;
+    text-align: center;
 }
 
 .buttonsContainer {
@@ -71,6 +72,10 @@ h2 {
 
     font-size: 1.7em;
     font-family:'Rubik Mono One', sans-serif;
+}
+
+.choiceButton:hover {
+    border: 2px solid yellow; 
 }
 
 .emoji {
@@ -111,6 +116,11 @@ button:hover {
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+
+#resetButton:hover {
+    color: black;
+    background-color: white;
 }
 
 footer {
