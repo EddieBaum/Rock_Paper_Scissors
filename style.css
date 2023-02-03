@@ -51,6 +51,7 @@ h2 {
 }
 #result {
     display: flex;
+    font-size: 2.5em;
 }
 
 .buttonsContainer {
@@ -86,13 +87,14 @@ button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: fixed;
+    position: absolute;
     border: 1px solid yellow;
     top: 10%; 
     bottom: 10%;
     left: 10%; 
     right: 10%; 
     background: rgb(0, 0, 0, .7);
+    z-index: 200;
 }
 
 #resetButton {
@@ -122,8 +124,9 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 65px;
     letter-spacing: 2px;
+    color: gray;
 }
 
 .logoSpan {

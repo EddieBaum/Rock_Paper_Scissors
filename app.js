@@ -29,19 +29,19 @@ function autoResetGame() {
 
 function getResult() {
     if (computerChoice === userChoice) {
-        result = 'Tie!'; 
+        result = 'Tie! &#128529'; 
     } 
     else if (computerChoice === 'rock' && userChoice === 'paper') {
-        result = 'Winner Winner Chicken Dinner!';
+        result = 'Winner! &#127942;';
     }
     else if (computerChoice === 'paper' && userChoice === 'scissors') {
-        result = 'Winner Winner Chicken Dinner!'; 
+        result = 'Winner! &#127942;'; 
     }
     else if (computerChoice === 'scissors' && userChoice === 'rock') {
-        result = 'Winner Winner Chicken Dinner!'; 
+        result = 'Winner! &#127942;'; 
     }
     else {
-        result = 'You Lost :/'; 
+        result = 'You Lost &#128078;'; 
     }
     return resultDisplay.innerHTML = result; 
 }
@@ -60,7 +60,7 @@ RockPaperScissorButtons.forEach(button => button.addEventListener('click', (e) =
         resultDisplay.style.opacity = '1';
         setTimeout(() => {
             resetScreen.style.display = 'flex';
-        }, 2500);
+        }, 1900);
     }
 }));
 
